@@ -3,7 +3,7 @@ const app = express();
 app.use(express.static("static"));
 app.set("view engine", "ejs");
 app.get("/", function (req, res) {
-  res.render("Main", {});
+  res.render("Windex", {});
   // If logged in redirect to /Flow
 });
 app.get("/Flow", function (req, res) {
